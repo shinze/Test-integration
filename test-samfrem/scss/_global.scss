@@ -1,0 +1,25 @@
+//
+// GLOBAL
+// --------------------------------------------------
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font: 400 1.6rem/1.4 'Open Sans', sans-serif;
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+  padding: 2.5rem;
+  background-color: $color-background;
+
+  @media only screen and (min-width: $break-medium) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

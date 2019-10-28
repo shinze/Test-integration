@@ -1,0 +1,133 @@
+//
+// WIDGET
+// --------------------------------------------------
+
+.widget {
+  @media only screen and (max-width: $break-medium) {
+    margin-bottom: 2.5rem;
+  }
+
+  @media only screen and (min-width: $break-medium) {
+    margin: 0.75rem;
+    width: 62.5rem;
+    padding: 2.5rem;
+    border-radius: .6rem;
+    background-color: $color-white;
+    box-shadow: 0 2px 16px 0 rgba($color-black, 0.11);
+  }
+
+  @media only screen and (min-width: $break-large) {
+    display: flex;
+  }
+
+  // Figure
+  // --------------------------------------------------
+  &-figure {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    border-radius: 0.4rem;
+
+    @media only screen and (min-width: $break-medium) {
+      width: 11.8rem;
+      height: 11.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      object-fit: cover;
+
+      @media only screen and (max-width: $break-medium - 1) {
+        height: 9.2rem;
+        width: 100%;
+      }
+    }
+
+    figcaption {
+      display: inline-block;
+      position: absolute;
+      bottom: 0.5rem;
+      padding: 0.25rem 1rem;
+      color: $color-green;
+      font-size: 0.8em;
+      font-weight: bold;
+      background-color: $color-white;
+      border-radius: 1rem;
+
+      @media only screen and (max-width: $break-medium - 1) {
+        left: 0.5rem;
+      }
+    }
+  }
+
+  // Content
+  // --------------------------------------------------
+  &-content {
+    @media only screen and (max-width: $break-medium - 1) {
+      padding: 2.5rem 0;
+      border-bottom: 1px solid $color-caret;
+    }
+
+    @media only screen and (min-width: $break-medium) {
+      padding: 2.5rem 0 0 0;
+    }
+
+    @media only screen and (min-width: $break-large) {
+      padding: 0 2.5rem;
+      width: 3.7rem;
+    }
+
+    h2 {
+      font-size: 1.25em;
+      font-weight: bold;
+      color: $color-green;
+      margin: 0;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    a {
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      color: $color-white;
+      text-decoration: none;
+      background-color: $color-green;
+      border-radius: .4rem;
+    }
+  }
+
+  // Link
+  // --------------------------------------------------
+  &-link {
+    @media only screen and (min-width: $break-large) {
+      display: flex;
+    }
+  }
+
+  // Icon
+  // --------------------------------------------------
+  &-icon {
+    display: inline-block;
+    width: 3.8rem;
+    height: 3.8rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+
+    @media only screen and (max-width: $break-large - 1) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    @media only screen and (min-width: $break-large) {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+  font-size: 62.5%; }
+
+body {
+  font: 400 1.6rem/1.4 'Open Sans', sans-serif; }
+
+main {
+  position: relative;
+  min-height: 100vh;
+  padding: 2.5rem;
+  background-color: #F3F5F6; }
+  @media only screen and (min-width: 768px) {
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+@media only screen and (max-width: 768px) {
+  .widget {
+    margin-bottom: 2.5rem; } }
+
+@media only screen and (min-width: 768px) {
+  .widget {
+    margin: 0.75rem;
+    width: 62.5rem;
+    padding: 2.5rem;
+    border-radius: .6rem;
+    background-color: #fff;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.11); } }
+
+@media only screen and (min-width: 1024px) {
+  .widget {
+    display: flex; } }
+
+.widget-figure {
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  border-radius: 0.4rem; }
+  @media only screen and (min-width: 768px) {
+    .widget-figure {
+      width: 11.8rem;
+      height: 11.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+  .widget-figure img {
+    object-fit: cover; }
+    @media only screen and (max-width: 767px) {
+      .widget-figure img {
+        height: 9.2rem;
+        width: 100%; } }
+  .widget-figure figcaption {
+    display: inline-block;
+    position: absolute;
+    bottom: 0.5rem;
+    padding: 0.25rem 1rem;
+    color: #15909E;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 1rem; }
+    @media only screen and (max-width: 767px) {
+      .widget-figure figcaption {
+        left: 0.5rem; } }
+
+@media only screen and (max-width: 767px) {
+  .widget-content {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #E3E3E3; } }
+
+@media only screen and (min-width: 768px) {
+  .widget-content {
+    padding: 2.5rem 0 0 0; } }
+
+@media only screen and (min-width: 1024px) {
+  .widget-content {
+    padding: 0 2.5rem;
+    width: 3.7rem; } }
+
+.widget-content h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #15909E;
+  margin: 0; }
+
+.widget-content p {
+  font-size: 0.8rem; }
+
+.widget-content a {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #15909E;
+  border-radius: .4rem; }
+
+@media only screen and (min-width: 1024px) {
+  .widget-link {
+    display: flex; } }
+
+.widget-icon {
+  display: inline-block;
+  width: 3.8rem;
+  height: 3.8rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor; }
+  @media only screen and (max-width: 1023px) {
+    .widget-icon {
+      position: absolute;
+      bottom: 0;
+      right: 0; } }
+  @media only screen and (min-width: 1024px) {
+    .widget-icon {
+      width: 4.8rem;
+      height: 4.8rem; } }
